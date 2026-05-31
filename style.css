@@ -63,14 +63,16 @@ body{
 
 .hero-image{
     flex:1;
-    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .hero-image img{
-    width:320px;
-    max-width:100%;
-    display:block;
-    margin:auto;
+    width:350px;
+    height:auto;
+    object-fit:contain;
+    filter:drop-shadow(0 10px 20px rgba(246,180,0,0.15));
 }
 
 .btn{
