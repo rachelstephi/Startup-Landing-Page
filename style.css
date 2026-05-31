@@ -1,0 +1,193 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#000;
+    color:#fff;
+    max-width:1200px;
+    margin:auto;
+}
+
+.navbar{
+    background:#f6b400;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 40px;
+}
+
+.logo{
+    font-weight:700;
+    color:#000;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#000;
+    font-size:14px;
+}
+
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px 40px;
+    gap:50px;
+}
+
+.hero-content{
+    flex:1;
+}
+
+.hero-content h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    color:#bdbdbd;
+    line-height:1.7;
+    margin-bottom:30px;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:320px;
+    max-width:100%;
+    display:block;
+    margin:auto;
+}
+
+.btn{
+    background:#f6b400;
+    color:#000;
+    border:none;
+    padding:12px 40px;
+    border-radius:30px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+
+.contact-section{
+    padding:20px 40px 60px;
+}
+
+.contact-section h2{
+    color:#f6b400;
+    font-size:42px;
+    margin-bottom:40px;
+}
+
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.contact-form input{
+    width:100%;
+    background:transparent;
+    border:1px solid #f6b400;
+    color:white;
+    padding:14px 20px;
+    border-radius:30px;
+    outline:none;
+}
+
+.contact-form input::placeholder{
+    color:#c5c5c5;
+}
+
+.row{
+    display:flex;
+    gap:20px;
+}
+
+.row input{
+    flex:1;
+}
+
+.submit-btn{
+    align-self:center;
+    margin-top:10px;
+}
+
+
+.table-section{
+    padding:20px 40px 80px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    border:1px solid #f6b400;
+}
+
+th,
+td{
+    border:1px solid #f6b400;
+    padding:18px;
+    text-align:left;
+}
+
+th{
+    font-weight:500;
+}
+
+tbody td{
+    color:#f6b400;
+}
+
+tfoot td{
+    background:#f6b400;
+    color:#000;
+    font-weight:500;
+}
+
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-content h1{
+        font-size:36px;
+    }
+
+    .row{
+        flex-direction:column;
+    }
+
+    table{
+        display:block;
+        overflow-x:auto;
+    }
+}
